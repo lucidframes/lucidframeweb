@@ -47,8 +47,22 @@ const Footer = () => {
                 <li>
                   <a href="/testimonials">Testimonials</a>
                 </li>
+              </ul>
+            </div>
+            <div className=" p-2 text-white ">
+              <h3 className="font-medium mb-2">Resources</h3>
+              <ul className="space-y-1 font-extralight">
+                <li>
+                  <a href="/footer/policies">Privacy Policies</a>
+                </li>
+                <li>
+                  <a href="/footer/terms">Terms of Service</a>
+                </li>
                 <li>
                   <a href="/contact">Contact Us</a>
+                </li>
+                <li>
+                  <a href="/blog">Blog</a>
                 </li>
               </ul>
             </div>
@@ -66,29 +80,6 @@ const Footer = () => {
                 </li>
                 <li>
                   <a href="/testimonials">Testimonials</a>
-                </li>
-                <li>
-                  <a href="/contact">Contact Us</a>
-                </li>
-              </ul>
-            </div>
-            <div className=" p-2 text-white ">
-              <h3 className="font-medium mb-2">Quick Links</h3>
-              <ul className="space-y-1 font-extralight">
-                <li>
-                  <a href="/about">About Us</a>
-                </li>
-                <li>
-                  <a href="/services">Our Services</a>
-                </li>
-                <li>
-                  <a href="/case-studies">Case Studies</a>
-                </li>
-                <li>
-                  <a href="/testimonials">Testimonials</a>
-                </li>
-                <li>
-                  <a href="/contact">Contact Us</a>
                 </li>
               </ul>
             </div>
@@ -117,7 +108,7 @@ const Footer = () => {
                 </form>
                 <p className="text-xs mt-2 text-gray-600">
                   By subscribing, you agree to our{" "}
-                  <a href="/privacy" className="underline">
+                  <a href="/footer/policies" className="underline">
                     Privacy Policy
                   </a>{" "}
                   <br />
@@ -136,10 +127,10 @@ const Footer = () => {
           {/* Left - Copyright & Legal Links */}
           <div className="flex flex-wrap items-center gap-4 ">
             <p>© 2025 Lucidframe ads | All rights reserved.</p>
-            <a href="/privacy-policy" className="hover:underline">
+            <a href="/footer/policies" className="hover:underline">
               Privacy Policy
             </a>
-            <a href="/terms-of-service" className="hover:underline">
+            <a href="/footer/terms" className="hover:underline">
               Terms of Service
             </a>
           </div>

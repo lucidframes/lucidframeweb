@@ -91,7 +91,7 @@ const Footer = () => {
                 <p className="text-xs mb-3 text-gray-100">
                   Join our newsletter to receive the latest updates.
                 </p>
-                <form onSubmit={handleSubmit} className="md:flex gap-2 w-24">
+                <form onSubmit={handleSubmit} className="md:flex gap-2 w-24 ">
                   <input
                     type="email"
                     placeholder="Enter your email"
@@ -99,12 +99,14 @@ const Footer = () => {
                     onChange={(e) => setEmail(e.target.value)}
                     className="p-2 border border-gray-400 rounded-md flex-1 text-gray-50"
                   />
-                  <button
-                    type="submit"
-                    className="p-2 bg-[#7F3BE3] text-white rounded-md"
-                  >
-                    Subscribe
-                  </button>
+                  <div className="mt-2">
+                    <button
+                      type="submit"
+                      className="p-2 bg-[#7F3BE3] text-white rounded-md"
+                    >
+                      Subscribe
+                    </button>
+                  </div>
                 </form>
                 <p className="text-xs mt-2 text-gray-600">
                   By subscribing, you agree to our{" "}

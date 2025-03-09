@@ -91,7 +91,7 @@ const Footer = () => {
                 <p className="text-xs mb-3 text-gray-100">
                   Join our newsletter to receive the latest updates.
                 </p>
-                <form onSubmit={handleSubmit} className="flex gap-2 w-24">
+                <form onSubmit={handleSubmit} className="md:flex gap-2 w-24">
                   <input
                     type="email"
                     placeholder="Enter your email"

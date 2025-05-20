@@ -56,7 +56,7 @@ export default function Home() {
             </Link>
           </div>
           <div className="hidden md:block text-[#ffffff] hover:text-[#6e15f3] animate">
-            <Link href="/">text HERE sample test</Link>
+            <Link href="/">VIDEO PRODUCTION</Link>
           </div>
         </div>
         <div className="flex justify-center px-10 items-center bg-[#131313] h-[20vh] w-[50vw]">
@@ -71,7 +71,7 @@ export default function Home() {
             </Link>
           </div>
           <div className="hidden md:block text-[#ffffff] hover:text-[#6e15f3] animate">
-            <Link href="/">text HERE sample test</Link>
+            <Link href="/">ADVERTISING</Link>
           </div>
         </div>
       </div>

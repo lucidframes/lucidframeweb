@@ -97,7 +97,7 @@ const Navbar = () => {
             Portfolio
           </Link>
           <Link
-            href="/contact"
+            href="/about"
             className="text-[#F1F1F1] block p-5 hover:text-[#7F3BE3] text-center"
           >
             About

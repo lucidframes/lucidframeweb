@@ -93,8 +93,8 @@ export default function Home() {
         {/* Content */}
         <div className="relative z-10 flex flex-col items-center gap-4">
           <p>
-            "Let’s Create Something Brilliant
-            <span className="font-bold"> Together.</span>"
+            Let’s Create Something Brilliant
+            <span className="font-bold"> Together.</span>
           </p>
           <p className="text-sm md:text-2xl opacity-80">
             Your vision, our craft. let’s make it real.

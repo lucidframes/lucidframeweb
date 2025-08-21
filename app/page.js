@@ -1,8 +1,11 @@
-import Image from "next/image";
-import ARROW from "@/public/ARROW.png";
-import Link from "next/link";
-import LOGO1 from "@/public/logo1.png";
-import LOGO2 from "@/public/logo2.png";
+import Image from 'next/image'
+import ARROW from '@/public/ARROW.png'
+import Link from 'next/link'
+import LOGO1 from '@/public/logo1.png'
+import LOGO2 from '@/public/logo2.png'
+import VideoAdArtBlock from '@/components/Vector'
+import AnimatedDotsBackground from '@/components/AnimatedDotsBackground'
+import WhyWorkWithUs from '@/components/WhyWorkWithUs'
 export default function Home() {
   return (
     <div>
@@ -40,16 +43,17 @@ export default function Home() {
           </div>
 
           <div className="flex h-[50vh] md:h-[80vh] md:w-[50vw] justify-center">
-            <video loop autoPlay muted className="md:w-3/4 lg:w-9/12">
+            <VideoAdArtBlock />
+            {/* <video loop autoPlay muted className="md:w-3/4 lg:w-9/12">
               <source src="/sample.mp4" type="video/mp4" />
               Your browser does not support the video tag.
-            </video>
+            </video> */}
           </div>
         </div>
       </div>
       {/* ribbon */}
       <div className="flex  ">
-        <div className="flex justify-center px-10 items-center bg-[#161616] h-[20vh] w-[50vw]">
+        <div className="flex justify-center px-10 items-center bg-[#151515] h-[20vh] w-[50vw]">
           <div className="pb-3">
             <Link href="/">
               <Image src={LOGO1} alt="Lucid Frames Logo" width={130} />
@@ -59,7 +63,7 @@ export default function Home() {
             <Link href="/">VIDEO PRODUCTION</Link>
           </div>
         </div>
-        <div className="flex justify-center px-10 items-center bg-[#131313] h-[20vh] w-[50vw]">
+        <div className="flex justify-center px-10 items-center bg-[#141414] h-[20vh] w-[50vw]">
           <div>
             <Link href="/">
               <Image
@@ -77,8 +81,33 @@ export default function Home() {
       </div>
 
       {/* nextpage */}
-      <div className="bg-[#181818] w-[100vw] h-screen"></div>
-      <div className="bg-[#7F3BE3] w-[100vw h-[40vh]"></div>
+      <div className="bg-[#161616] w-[100vw] h-screen"></div>
+      <div className="bg-[#181818] w-[100vw] h-[70vh] md:h-[60vh]">
+        <WhyWorkWithUs />
+      </div>
+
+      <div className="relative flex flex-col gap-6 bg-[#7F3BE3] w-[100vw] h-[40vh] text-[#F1F1F1] text-xl md:text-3xl italic text-center items-center justify-center overflow-hidden">
+        {/* Background */}
+        <AnimatedDotsBackground />
+
+        {/* Content */}
+        <div className="relative z-10 flex flex-col items-center gap-4">
+          <p>
+            "Let’s Create Something Brilliant
+            <span className="font-bold"> Together.</span>"
+          </p>
+          <p className="text-sm md:text-2xl opacity-80">
+            Your vision, our craft. let’s make it real.
+          </p>
+
+          <Link
+            href="/contact"
+            className="px-4 py-2 bg-[#F1F1F1] text-[#7F3BE3] rounded-lg text-sm font-medium hover:bg-[#eaeaea] transition-colors duration-300"
+          >
+            Let’s Talk
+          </Link>
+        </div>
+      </div>
     </div>
-  );
+  )
 }

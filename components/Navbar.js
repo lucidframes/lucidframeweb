@@ -1,17 +1,17 @@
-"use client";
+'use client'
 
-import { useState } from "react";
-import Link from "next/link";
-import Image from "next/image";
-import WEBSITE from "@/public/WEBSITE.png";
-import { motion } from "framer-motion";
+import { useState } from 'react'
+import Link from 'next/link'
+import Image from 'next/image'
+import WEBSITE from '@/public/WEBSITE.png'
+import { motion } from 'framer-motion'
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false)
 
   const toggleMenu = () => {
-    setIsOpen((prevState) => !prevState); // Toggle the menu state (open/close)
-  };
+    setIsOpen((prevState) => !prevState) // Toggle the menu state (open/close)
+  }
 
   return (
     <nav className="w-full fixed top-0 bg-[#181818] z-50">
@@ -37,12 +37,12 @@ const Navbar = () => {
           >
             Services
           </Link>
-          <Link
+          {/* <Link
             href="/portfolio"
             className="hover:text-[#7F3BE3] text-[#F1F1F1] py-1"
           >
             Portfolio
-          </Link>
+          </Link> */}
           <Link
             href="/about"
             className="hover:text-[#7F3BE3] text-[#F1F1F1] py-1"
@@ -64,7 +64,7 @@ const Navbar = () => {
             onClick={toggleMenu}
             className="text-2xl text-white font-bold"
           >
-            {isOpen ? "✖" : "☰"}{" "}
+            {isOpen ? '✖' : '☰'}{' '}
             {/* Show '✖' when the menu is open, and '☰' when it's closed */}
           </button>
         </div>
@@ -74,9 +74,9 @@ const Navbar = () => {
       {isOpen && (
         <motion.div
           className="md:hidden bg-[#181818] h-screen"
-          initial={{ opacity: 0, y: "5%" }} // Starts off-screen from the top
+          initial={{ opacity: 0, y: '5%' }} // Starts off-screen from the top
           animate={{ opacity: 1, y: 0 }} // Slides in from the top to its normal position
-          transition={{ type: "spring", stiffness: 100, damping: 25 }}
+          transition={{ type: 'spring', stiffness: 100, damping: 25 }}
         >
           <Link
             href="/"
@@ -90,12 +90,12 @@ const Navbar = () => {
           >
             Services
           </Link>
-          <Link
+          {/* <Link
             href="/portfolio"
             className="text-[#F1F1F1] block p-5 hover:text-[#7F3BE3] text-center"
           >
             Portfolio
-          </Link>
+          </Link> */}
           <Link
             href="/about"
             className="text-[#F1F1F1] block p-5 hover:text-[#7F3BE3] text-center"
@@ -112,7 +112,7 @@ const Navbar = () => {
         </motion.div>
       )}
     </nav>
-  );
-};
+  )
+}
 
-export default Navbar;
+export default Navbar
